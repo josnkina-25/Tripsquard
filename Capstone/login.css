@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(./photos/jakob-owens-9v_xYRu_laY-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000000;
+  min-height: 100vh;
+  min-height: 100dvh; /* viewport height for mobile */
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  color: #000000;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+  padding: 10px;
+  background-color: #ef790ae9;
+  border-radius: 10px;
+  border: 1px solid rgb(149, 148, 146);
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
+  width: 120px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+}
+.navbar a:hover {
+  color: #ffffff;
+}
+/* Login Page */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid rgba(251, 251, 248, 0.507);
+  width: min(90%, 420px);
+  margin: 4rem auto;
+  padding: 3rem 2.5rem;
+  background-color: rgba(0, 0, 0, 0.482);
+}
+h1 {
+  text-align: center;
+  color: #ffffffc4;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 1rem;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-left: 2.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.input-box input::placeholder {
+  color: #ffffffc9;
+}
+.input-box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.5rem;
+  color: #ffffff69;
+  font-size: 1rem;
+}
+.btn-submit {
+  text-align: center;
+  margin-top: 1rem;
+}
+.btn-submit button {
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  background-color: #456ddcb8;
+  color: #ffffffcd;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+.btn-submit button:hover {
+  background-color: #ef790a;
+  color: #000000;
+}
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.remember-forgot label {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+.remember-forgot a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.forgot-btn {
+  background-color: #456ddcc9;
+  font-size: 0.75rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.3s;
+  width: auto;
+  padding: 0 0.75rem;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+}
+.forgot-btn:hover {
+  background-color: #ef790a;
+  color: #000000;
+}
+.register-link {
+  text-align: center;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.register-link a {
+  text-align: center;
+  margin-top: 1rem;
+  color: #ffffffba;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.reg-btn {
+  background-color: #456ddcc9;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.3s;
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.reg-btn:hover {
+  background-color: #ef790a;
+  color: #000000;
+}
+.about-footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: rgb(206, 211, 227);
+  padding: 1.5rem 2rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+@media (max-width: 1921px) {
+  .wrapper {
+    justify-content: center;
+    margin: 4rem auto;
+    padding: 3rem 2.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .navbar {
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .wrapper {
+    margin: 3rem auto;
+    padding: 2.5rem 2rem;
+  }
+}
+
+/* Tablet portrait / large mobile */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* FIX: fixed causes iOS/Android glitch */
+    background-position: center center;
+  }
+
+  .navbar {
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .navbar a {
+    width: 100px;
+    font-size: 0.875rem;
+  }
+
+  .wrapper {
+    margin: 2rem auto;
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .remember-forgot {
+    font-size: 0.75rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 540px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .wrapper {
+    width: 92%;
+    margin: 1.5rem auto;
+    padding: 1.75rem 1.25rem;
+    border-radius: 14px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .input-box {
+    height: 45px;
+  }
+
+  .btn-submit button,
+  .reg-btn {
+    height: 42px;
+    font-size: 0.95rem;
+  }
+
+  .forgot-btn {
+    font-size: 0.7rem;
+    height: 28px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 380px) {
+  .wrapper {
+    width: 95%;
+    padding: 1.5rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .remember-forgot {
+    flex-direction: column; /* stacks checkbox and forgot btn on tiny screens */
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .forgot-btn {
+    width: 100%;
+    margin: 0;
+  }
+
+  .input-box input {
+    font-size: 0.9rem;
+  }
+}
+
+/* Landscape on short phones */
+@media (max-width: 768px) and (orientation: landscape) and (max-height: 500px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .wrapper {
+    margin: 1rem auto;
+    padding: 1.25rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .input-box {
+    height: 40px;
+    margin-bottom: 0.75rem;
+  }
+
+  .btn-submit button,
+  .reg-btn {
+    height: 38px;
+  }
+}
+.wrapper,
+.about-footer {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 2s ease,
+    transform 2s ease;
+}
+.fade1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 2s ease,
+    transform 2s ease;
+}
+.fade2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 2s ease,
+    transform 2s ease 1s;
+}
+.page--loading {
+  opacity: 0;
+}
+
+.page--loaded {
+  opacity: 1;
+  transition: opacity 3s ease;
+}
