@@ -1,0 +1,42 @@
+TripSquad is a website that allows users to plan and book trips with friends. It is a web-based travel planning platform designed to simplify the process of planning trips with friends. It is a responsive website that uses HTML, CSS, and DOM JavaScript.
+
+Features:
+
+    User Registration and Login: Users can create an account and log in to the website.
+    Home Page: The home page provides an introduction to the website and a call to action to get started.
+    About Page: The about page provides information about the company and its mission.
+    Destination Page: The destination page provides information about different destinations and allows users to search for destinations.
+    Contact Us: The contact us page provides information about how to contact the company.
+
+Technologies Used:
+
+    HTML: semantic markup and structure.
+    CSS: Flexbox and Grid layout, animations, and responsive design.
+    JavaScript: DOM manipulation, event listeners, and animations.
+    Google Fonts.
+    Unsplash for images.
+    Mapbox for maps.
+
+Project Structure:
+
+Capstone
+├── index.html
+├── about.html
+├── destination.html
+├── login.html
+├── register.html
+├── style.css
+├── about.css
+├── destination.css
+├── login.css
+├── register.css
+└── Javascipt
+├── index.js
+├── about.js
+├── destination.js
+├── login.js
+└── register.js
+Installation:
+
+    Clone the repository: git clone https://github.com/josnkina-25/TripSquad.git
+    Open the index.html file in your web browser.
